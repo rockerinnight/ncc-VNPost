@@ -258,7 +258,7 @@ body {
 
 .p3 {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 40% 19% 40%;
 }
 
 .p1 {
