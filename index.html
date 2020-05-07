@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập cắt giao diện</title>
+    <link rel="stylesheet" href="bt2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header-wrapper">
+            <div class="topnav" id="header">
+                <div id="logo">
+                    <a href="#"><img src="vnpost-logo.png" /></a>
+                </div>
+                <div id="user-profile">
+                    <a href="#">
+                        <i class="fa">&#xf2bd;</i>
+                        <span>AdminBC6 - test@teca.vn</span>
+                        <i class="fa">&#xf142;</i>
+                    </a>
+                </div>
+            </div>
+            <div class="topnav" id="navbar">
+                <a class="active" href="#">HỆ THỐNG</a>
+                <a href="#">KÊ KHAI</a>
+                <a href="#">QUẢN LÝ SỰ VỤ</a>
+                <a href="#">BÁO CÁO THỐNG KÊ</a>
+                <a href="#">QUẢN LÝ BIÊN LAI</a>
+                <a href="#">TRA CỨU</a>
+            </div>
+        </div>
+        <div id="content-wrapper">
+            <div id="sidebar">
+                <div style="background-color: #4fd7e9; padding: 7px;">
+                    <span onclick="closeSidebar()" id="sidebar-button">&NestedLessLess;</span>
+                </div>
+                <button class="collapsible">
+                    <i class="fa fa-sitemap" aria-hidden="true"></i>
+                    <span class="sidebar-cate-names">&nbsp;Danh mục hệ thống</span>
+                    <i style="float: right; margin-top: 3px;"
+                        class="sidebar-cate-collapsible-icons fa fa-caret-square-o-down" aria-hidden="true"></i>
+                </button>
+                <div class="cate-sub-wrapper">
+                    <div class="sidebar-cate-sub">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        <span class="sidebar-cate-sub-names">&nbsp;Example 1</span>
+                    </div>
+                    <div class="sidebar-cate-sub">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        <span class="sidebar-cate-sub-names">&nbsp;Example 2</span>
+                    </div>
+                </div>
+                <button class="collapsible">
+                    <i class="fa fa-id-badge" aria-hidden="true"></i>
+                    <span class="sidebar-cate-names">&nbsp;Quản lý người dùng</span>
+                    <i style="float: right; margin-top: 3px;"
+                        class="sidebar-cate-collapsible-icons fa fa-caret-square-o-down" aria-hidden="true"></i>
+                </button>
+                <div class="cate-sub-wrapper">
+                    <div class="sidebar-cate-sub">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        <span class="sidebar-cate-sub-names">&nbsp;Danh sách nhóm quyền</span>
+                    </div>
+                    <div class="sidebar-cate-sub">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <span class="sidebar-cate-sub-names">&nbsp;Danh sách người dùng</span>
+                    </div>
+                </div>
+            </div>
+            <div id="main-content">
+                <div id="categories-wrapper">
+                    <div id="categories">
+                        <h3>DANH MỤC MẠNG LƯỚI</h3>
+                        <div id="finder">
+                            <form id="search-bar" action="/action_page.php">
+                                <span style="font-weight: bold; margin-top: 20px;" for="search">Tìm kiếm:</span>
+                                <input type="search" id="search-input" name="search">
+                                <button id="search-button">
+                                    <i class="fa fa-search" aria-hidden="true"></i>&nbsp;Tìm kiếm
+                                </button>
+                            </form>
+                            <div id="categories-selector">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-folder" aria-hidden="true"></i><span>&nbsp;00 - Tổng Công Ty</span>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<span>10 - Bưu Điện TP Hà Nội</span>
+                                                <ul>
+                                                    <li>
+                                                        <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<span>1155 - Bưu Điện Trung Tâm 6</span>
+                                                        <ul>
+                                                            <li>
+                                                                <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<span>127060 - KHL Hoàng Mai</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="details-wrapper">
+                    <h3>THÔNG TIN CHI TIẾT</h3>
+                    <div id="details">
+                        <div id="details-left">
+                            <span id="id">Mã:</span>
+                            <span id="address">Địa chỉ:</span>
+                            <span><br></span>
+                            <span id="sdt">Số điện thoại:</span>
+                            <span id="loai-bc">Loại BC:</span>
+                            <span id="cq-bhxh">Cơ quan BHXH:</span>
+                        </div>
+                        <div id="details-right">
+                            <div class="p3">
+                                <input type="number" id="id" placeholder="127060">
+                                <span id="name">Tên:</span>
+                                <input type="text" id="name" placeholder="KHL Hoàng Mai">
+                            </div>
+                            <div class="p3">
+                                <input type="text" id="phuong-xa" placeholder="Phường Giáp Bát">
+                                <input type="text" id="quan-huyen" placeholder="Quận Hoàng Mai">
+                                <input type="text" id="tinh-tp" placeholder="Thành phố Hà Nội">
+                            </div>
+                            <div class="p1">
+                                <input type="text" id="address-details"
+                                    placeholder="Số 811, Đường Giải Phóng, Giáp Bát">
+                            </div>
+                            <div class="p3">
+                                <input type="text" id="sdt" placeholder="024.36649409">
+                                <span id="address">Số fax:</span>
+                                <input type="text" id="fax" placeholder="">
+                            </div>
+                            <div class="p3"><input type="text" id="bc-type" placeholder="KT2">
+                                <span id="address">Phương thức:</span>
+                                <input type="text" id="phuong-thuc" placeholder="Điện tử">
+                            </div>
+                            <div class="p1">
+                                <input type="text" id="cq-bhxh" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bt2.js"></script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("sidebar-active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

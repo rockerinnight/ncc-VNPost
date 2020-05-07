@@ -1,0 +1,269 @@
+#container {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* start of header & navbar */
+
+#header-wrapper {
+    height: 30%;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #4fd7e9;
+}
+
+.topnav a.active {
+    background-color: #fbb621;
+}
+
+#navbar {
+    max-height: 100px;
+}
+
+#navbar.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+#navbar.topnav a:hover {
+    background-color: #fbb621;
+}
+
+#header {
+    background-color: #fff9e4;
+}
+
+#header.topnav a {
+    color: black;
+    text-decoration: none;
+}
+
+#header a:hover {
+    color: #fbb621;
+}
+
+#logo {
+    float: left;
+    margin-left: 50px;
+}
+
+#logo img {
+    padding: 20px 0;
+    max-height: 50px;
+}
+
+#user-profile {
+    float: right;
+    line-height: 100px;
+    margin-right: 20px;
+}
+
+#user-profile a {
+    color: black;
+}
+
+#user-profile i {
+    padding: 0 10px;
+}
+
+/* end of header & navbar */
+
+/* start of content */
+
+#content-wrapper {
+    height: 70%;
+}
+
+#main-content {
+    transition: margin-left 0.4s;
+    margin-left: 300px;
+    margin-top: 5px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* end of content */
+
+/* start of sidebar */
+
+#sidebar {
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    overflow-x: hidden;
+    transition: 0.4s;
+    font-size: 30px;
+    box-shadow: 0 0 20px rgb(204, 203, 203);
+}
+
+#sidebar-button {
+    margin-left: 253px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.collapsible-cate {
+    position: relative;
+    padding: 10px;
+}
+
+.sidebar-cate-names {
+    font-size: initial;
+    padding: 18px 0;
+}
+
+.sidebar-cate-sub {
+    font-size: initial;
+    padding: 18px 0;
+}
+
+.sidebar-cate-sub:hover {
+    cursor: pointer;
+    color: #fbb621;
+}
+
+.cate-sub-wrapper {
+    padding: 0 18px;
+    margin-left: 32px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    transition: 0.4s;
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #fbb621;
+    background-color: inherit;
+}
+
+.sidebar-active, .collapsible:hover {
+    color: black;
+}
+
+/* end of sidebar */
+
+/* start of categories */
+
+#categories-wrapper {
+    /* position: absolute; */
+    width: 30%;
+    margin-left: 1%;
+    height: 100%;
+    box-shadow: 0 0 20px rgb(204, 203, 203);
+}
+
+#categories>h3 {
+    margin: 0;
+    padding: 25px;
+    border-bottom: 1px solid lightgray;
+}
+
+#finder {
+    padding: 20px;
+}
+
+#categories-selector ul {
+    list-style-type: none;
+    padding-top: 30px;
+}
+
+#categories-selector ul i {
+    color: #4fd7e9;
+}
+
+#categories-selector span:hover {
+    cursor: pointer;
+    color: #fbb621;
+}
+
+#search-bar {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#search-input {
+    border: none;
+    border-bottom: 2px solid lightgray;
+}
+
+#search-button {
+    background-color: #4fd7e9;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgb(204, 203, 203);
+}
+
+/* end of categories */
+
+/* start of details */
+
+#details-wrapper {
+    width: 67%;
+    margin-left: 1%;
+    box-shadow: 0 0 20px rgb(204, 203, 203);
+}
+
+#details-wrapper>h3 {
+    margin: 0;
+    padding: 25px;
+    border-bottom: 1px solid lightgray;
+}
+
+#details {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 20px 0 50px 28px;
+}
+
+#details span {
+    display: block;
+    padding: 30px 0 0 0;
+}
+
+#details input {
+    display: inline-block;
+    padding: 30px 0 0 0;
+    margin-right: 20px;
+    font-size: inherit;
+    border: none;
+    border-bottom: 1px dotted lightgray;
+}
+
+.p3 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.p1 {
+    display: grid;
+    grid-template-columns: 99%;
+}
+
+/* end of details */
